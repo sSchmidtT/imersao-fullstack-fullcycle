@@ -11,8 +11,8 @@ import (
 
 type User struct {
 	Base  `valid:"required"`
-	Name  string `json:"name" valid:"notnull"`
-	Email string `json:"email" valid:"notnull"`
+	Name  string `json:"name" gorm:"type:varchar(120)" valid:"notnull"`
+	Email string `json:"email" gorm:"type:varchar(150)" valid:"notnull"`
 }
 
 func (user *User) isValid() error {
