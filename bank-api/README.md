@@ -2,7 +2,7 @@
 
 Participe: https://imersao.fullcycle.com.br
 
-## Api Bank-Api
+## Api Bank-Api (Nest.JS)
 
 Essa api é responsável por fazer a comunição o front-end dos bancos ao codepix recebendo requisições via Rest e realizando interações via gRPC e Apache Kafka com o codepix.
 
