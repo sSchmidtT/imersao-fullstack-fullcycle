@@ -2,30 +2,18 @@
 
 Participe: https://imersao.fullcycle.com.br
 
-## Microsserviço CodePix
-
-Esse microsserviço tem o objetivo de ser um hub de transações entre os bancos que simularemos durante o projeto.
+Este projeto simula as operações de transferências através de uma chave única (pix) onde é possível realizar transações entre contas e bancos diversos, para isso foi desenvolvido a aplicação front-end do banco, a api para integração do banco e um microsserviço utilizando gRPC responsável por armazenar, validar e distribuir as requisições entre bancos diversos..
 
 ## Como executar
 
 Utilizamos Docker para que todos os serviços que utilizaremos fiquem disponíveis.
 
 - Faça o clone do projeto
-- Tendo o docker instalado em sua máquina apenas execute:
-`docker-compose up -d`
+- Tendo o docker instalado execute os containers de cada aplicação.`
 
 ### Como executar a aplicação
-- Acesse o container da aplicação executando: `docker exec -it codepix_app bash`
-- Rode `go run cmd/codepix/main.go`
+- Inicialize os containers do Apache Kafka.
+- Inicialize os containers do CodePix (aplicação em GO e Postgres).
+- Inicialize cada Bank-api desejada (é possível configurar várias para simular bancos diferente).
+- Inicialize cada Bank-frontend desejado (para cada Bank-api rodando deverá ter uma frontend configurado).
 
-**Importante:** Esse código está sendo disponibilizado conforme o andamento das aulas, logo, o arquivo para executar o projeto talvez ainda não tenha sido criado.
-
-### Serviços utilizados ao executar o docker-compose
-
-- Aplicação principal
-- Postgres
-- PgAdmin
-- Apache Kafka
-- Criador dos tópicos a serem utilizados pelo Kafka
-- Confluent control center
-- ZooKeeper
