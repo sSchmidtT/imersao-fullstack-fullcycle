@@ -2,7 +2,7 @@
 
 Participe: https://imersao.fullcycle.com.br
 
-## Aplicação Front End do banco
+## Aplicação Front End (Next.JS)
 
 Este é o front-end do banco utilizado para cadastrar e consultar novas chaves pix e realizar novas transações.
 
