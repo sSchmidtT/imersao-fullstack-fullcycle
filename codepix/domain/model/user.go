@@ -9,6 +9,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
+func init() {
+	govalidator.SetFieldsRequiredByDefault(true)
+}
+
 type User struct {
 	Base  `valid:"required"`
 	Name  string `json:"name" gorm:"type:varchar(120)" valid:"notnull"`

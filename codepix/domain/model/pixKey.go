@@ -8,6 +8,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
+func init() {
+	govalidator.SetFieldsRequiredByDefault(true)
+}
+
 type PixKeyRepositoryInterface interface {
 	RegisterKey(pixKey *PixKey) (*PixKey, error)
 	FindKeyByKind(key, kind string) (*PixKey, error)
