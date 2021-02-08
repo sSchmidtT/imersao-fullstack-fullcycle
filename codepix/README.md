@@ -19,8 +19,6 @@ Utilizamos Docker para que todos os serviços que utilizaremos fiquem disponíve
 - Rode `go run main.go fixtures` - este comando irá realizar o cadastro de alguns bancos e algumas contas ao inicializar a aplicação
 - Rode `go run main.go all` - este comando irá disponibilizar o **gRPC** e o **Process e Consumer** do **Apache Kafka** deixando a aplicação pronta para receber e processar requisições.
 
-**Importante:** Esse código está sendo disponibilizado conforme o andamento das aulas, logo, o arquivo para executar o projeto talvez ainda não tenha sido criado.
-
 ### Serviços utilizados ao executar o docker-compose
 
 - Aplicação principal
